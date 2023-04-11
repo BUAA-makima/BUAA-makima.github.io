@@ -3177,9 +3177,9 @@ if (localStorage.getItem("blogbg") != undefined) {
 } else {
   document.getElementById("defineBg").innerText = `:root{
     --default-bg: url(https://makima777.github.io/assets/background.jpg);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
+    --darkmode-bg:url(https://makima777.github.io/assets/dark_background.jpg);
     --mobileday-bg: url(https://makima777.github.io/assets/background.jpg);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --mobilenight-bg: url(https://makima777.github.io/assets/dark_background.jpg);
   }`;
 }
 // 切换背景主函数
