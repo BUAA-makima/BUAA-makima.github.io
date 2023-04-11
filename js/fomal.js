@@ -3176,9 +3176,9 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://makima777.github.io/img/background.jpg);
+    --default-bg: url(https://makima777.github.io/assets/background.jpg);
     --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://makima777.github.io/img/background.jpg);
+    --mobileday-bg: url(https://makima777.github.io/assets/background.jpg);
     --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
   }`;
 }
