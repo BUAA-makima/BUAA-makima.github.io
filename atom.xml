@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Makima777</title>
+  
+  <subtitle>Makima777の博客</subtitle>
+  <link href="https://makima777.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://makima777.github.io/"/>
+  <updated>2023-04-11T12:37:44.481Z</updated>
+  <id>https://makima777.github.io/</id>
+  
+  <author>
+    <name>Makima777</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hello-hexo</title>
+    <link href="https://makima777.github.io/posts/b68a7456.html"/>
+    <id>https://makima777.github.io/posts/b68a7456.html</id>
+    <published>2023-04-11T12:36:39.000Z</published>
+    <updated>2023-04-11T12:37:44.481Z</updated>
+    
+    <content type="html"><![CDATA[<p>hello world!</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;hello world!&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
