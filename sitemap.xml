@@ -101,15 +101,6 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/box/nav/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://makima777.github.io/box/gallery/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
@@ -119,7 +110,25 @@
   </url>
   
   <url>
+    <loc>https://makima777.github.io/box/nav/index.html</loc>
+    
+    <lastmod>2023-04-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://makima777.github.io/life/games/index.html</loc>
+    
+    <lastmod>2023-04-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://makima777.github.io/life/music/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://makima777.github.io/site/census/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://makima777.github.io/life/music/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -198,6 +198,13 @@
   </url>
   
   <url>
+    <loc>https://makima777.github.io/tags/Butterfly/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://makima777.github.io/tags/BUAA/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -205,7 +212,7 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/tags/%E7%94%B5%E6%A2%AF%E8%B0%83%E5%BA%A6/</loc>
+    <loc>https://makima777.github.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%96%E7%AE%80/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -233,14 +240,7 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/tags/Butterfly/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://makima777.github.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%96%E7%AE%80/</loc>
+    <loc>https://makima777.github.io/tags/%E7%94%B5%E6%A2%AF%E8%B0%83%E5%BA%A6/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -254,20 +254,13 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/tags/C-Primer/</loc>
+    <loc>https://makima777.github.io/tags/Cpp/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
-  
-  <url>
-    <loc>https://makima777.github.io/categories/vim/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://makima777.github.io/categories/Hexo/</loc>
@@ -284,6 +277,13 @@
   </url>
   
   <url>
+    <loc>https://makima777.github.io/categories/vim/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://makima777.github.io/categories/markdown/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -291,7 +291,7 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/categories/C/</loc>
+    <loc>https://makima777.github.io/categories/Cpp-Primer/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
