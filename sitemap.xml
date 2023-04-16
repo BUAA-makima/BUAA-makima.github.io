@@ -101,15 +101,6 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/box/gallery/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://makima777.github.io/box/nav/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
@@ -119,16 +110,7 @@
   </url>
   
   <url>
-    <loc>https://makima777.github.io/life/games/index.html</loc>
-    
-    <lastmod>2023-04-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://makima777.github.io/life/music/index.html</loc>
+    <loc>https://makima777.github.io/box/gallery/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -146,7 +128,25 @@
   </url>
   
   <url>
+    <loc>https://makima777.github.io/life/games/index.html</loc>
+    
+    <lastmod>2023-04-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://makima777.github.io/site/census/index.html</loc>
+    
+    <lastmod>2023-04-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://makima777.github.io/life/music/index.html</loc>
     
     <lastmod>2023-04-11</lastmod>
     
@@ -226,6 +226,13 @@
   </url>
   
   <url>
+    <loc>https://makima777.github.io/tags/Cpp/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://makima777.github.io/tags/vim/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -253,13 +260,6 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://makima777.github.io/tags/Cpp/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
@@ -277,6 +277,13 @@
   </url>
   
   <url>
+    <loc>https://makima777.github.io/categories/Cpp-Primer/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://makima777.github.io/categories/vim/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -285,13 +292,6 @@
   
   <url>
     <loc>https://makima777.github.io/categories/markdown/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://makima777.github.io/categories/Cpp-Primer/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
