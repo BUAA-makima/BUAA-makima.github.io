@@ -9515,6 +9515,7 @@ hr:before {
   transition: all 0.3s ease-in-out;
 }
 
+@import 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css';
 .search-dialog {
   position: fixed;
   top: 10%;
