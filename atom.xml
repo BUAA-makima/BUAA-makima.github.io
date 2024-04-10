@@ -177,9 +177,9 @@
     
     <category term="BUAA" scheme="https://buaa-makima.github.io/tags/BUAA/"/>
     
-    <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
-    
     <category term="电梯调度" scheme="https://buaa-makima.github.io/tags/%E7%94%B5%E6%A2%AF%E8%B0%83%E5%BA%A6/"/>
+    
+    <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
     
   </entry>
   
@@ -248,9 +248,9 @@
     
     <category term="BUAA" scheme="https://buaa-makima.github.io/tags/BUAA/"/>
     
-    <category term="表达式化简" scheme="https://buaa-makima.github.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%96%E7%AE%80/"/>
-    
     <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
+    
+    <category term="表达式化简" scheme="https://buaa-makima.github.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%96%E7%AE%80/"/>
     
   </entry>
   
