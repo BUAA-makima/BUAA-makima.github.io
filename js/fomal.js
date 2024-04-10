@@ -3176,10 +3176,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://makima777.github.io/assets/background.jpg);
-    --darkmode-bg:url(https://makima777.github.io/assets/dark_background.jpg);
-    --mobileday-bg: url(https://makima777.github.io/assets/background.jpg);
-    --mobilenight-bg: url(https://makima777.github.io/assets/dark_background.jpg);
+    --default-bg: url(https://BUAA-makima.github.io/assets/background.jpg);
+    --darkmode-bg:url(https://BUAA-makima.github.io/assets/dark_background.jpg);
+    --mobileday-bg: url(https://BUAA-makima.github.io/assets/background.jpg);
+    --mobilenight-bg: url(https://BUAA-makima.github.io/assets/dark_background.jpg);
   }`;
 }
 // 切换背景主函数
