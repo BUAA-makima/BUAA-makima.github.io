@@ -108,9 +108,9 @@
     
     <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
     
-    <category term="JML" scheme="https://buaa-makima.github.io/tags/JML/"/>
-    
     <category term="阅读笔记" scheme="https://buaa-makima.github.io/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="JML" scheme="https://buaa-makima.github.io/tags/JML/"/>
     
   </entry>
   
@@ -131,9 +131,9 @@
     <category term="Cpp Primer" scheme="https://buaa-makima.github.io/categories/Cpp-Primer/"/>
     
     
-    <category term="阅读笔记" scheme="https://buaa-makima.github.io/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
-    
     <category term="Cpp" scheme="https://buaa-makima.github.io/tags/Cpp/"/>
+    
+    <category term="阅读笔记" scheme="https://buaa-makima.github.io/tags/%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
