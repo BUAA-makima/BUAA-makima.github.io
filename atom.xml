@@ -6,7 +6,7 @@
   <link href="https://buaa-makima.github.io/atom.xml" rel="self"/>
   
   <link href="https://buaa-makima.github.io/"/>
-  <updated>2026-11-03T16:49:48.094Z</updated>
+  <updated>2026-11-05T15:56:31.200Z</updated>
   <id>https://buaa-makima.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://buaa-makima.github.io/posts/6ce273f.html"/>
     <id>https://buaa-makima.github.io/posts/6ce273f.html</id>
     <published>2026-11-03T15:51:37.000Z</published>
-    <updated>2026-11-03T16:49:48.094Z</updated>
+    <updated>2026-11-05T15:56:31.200Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="免费域名注册">免费域名注册</h3><p><a href="https://my.dnshe.com/">https://my.dnshe.com/</a> 可以注册三个免费的域名，365天，可续</p><h3 id="Cloudflare托管域名">Cloudflare托管域名</h3><p>添加域名-&gt;连接域名-&gt;输入域名后继续-&gt;选择免费计划-&gt;继续激活</p><p>将cloudflare的名称服务器替换到域名网站的DNS服务器(管理域名-DNS服务器)中</p><h3 id="VPS节点创建">VPS节点创建</h3><p><a href="https://github.com/0xdabiaoge/singbox-lite">脚本</a></p><p>下载之后，sb进入界面，生成的节点clash可用文件在<code>/usr/local/etc/sing-box/clash.yaml</code></p><h4 id="直连-VLESS-TCP-Reality-Vision">直连 (VLESS + TCP + Reality + Vision)</h4><p>1-&gt;1</p><p>配置服务器IP、伪装域名、端口和名称</p><p>最后注意服务器转发对应端口</p><h4 id="argo固定隧道-VLESS-WS">argo固定隧道 (VLESS-WS)</h4><p>直连可能面临tcp被封禁导致无法连接，使用argo隧道节点采用以下方式连接</p><p>域名-&gt;Cloudflare-&gt;Cloudfalred（服务器）-&gt;代理端口</p><p>Cloudflare中<code>联网-Tunnels</code> 创建隧道，创建路由填写域名，URL填写端口<code>http://localhost:port</code></p><p>sing-box: 2-&gt;1，输入URL填写端口，默认WebSocket路径，2固定隧道，使用tunnel概览界面的token，输入路由的域名，填写名称</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="免费域名注册">免费域名注册</h3><p><a href="https://my.dnshe.com/">https://my.dnshe.com/</a> 可以注册三个免费的域名，365天，可续</p><h3 id="Cloudflare托管域名">Cloudflare托管域名</h3><p>添加域名-&gt;连接域名-&gt;输入域名后继续-&gt;选择免费计划-&gt;继续激活</p><p>将cloudflare的名称服务器替换到域名网站的DNS服务器(管理域名-DNS服务器)中</p><h3 id="VPS节点创建">VPS节点创建</h3><p><a href="https://github.com/0xdabiaoge/singbox-lite">脚本</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(curl -LfsS https://raw.githubusercontent.com/0xdabiaoge/singbox-lite/main/singbox.sh -o /usr/local/bin/sb || wget -q https://raw.githubusercontent.com/0xdabiaoge/singbox-lite/main/singbox.sh -O /usr/local/bin/sb) &amp;&amp; <span class="built_in">chmod</span> +x /usr/local/bin/sb &amp;&amp; sb</span><br></pre></td></tr></table></figure><p>下载之后，sb进入界面，安装核心，生成的节点clash可用文件在<code>/usr/local/etc/sing-box/clash.yaml</code></p><h4 id="直连-VLESS-TCP-Reality-Vision">直连 (VLESS + TCP + Reality + Vision)</h4><p>1-&gt;1</p><p>配置服务器IP、伪装域名、端口和名称</p><p>最后注意服务器转发对应端口</p><h4 id="argo固定隧道-VLESS-WS">argo固定隧道 (VLESS-WS)</h4><p>直连可能面临tcp被封禁导致无法连接，使用argo隧道节点采用以下方式连接</p><p>域名-&gt;Cloudflare-&gt;Cloudfalred（服务器）-&gt;代理端口</p><p>Cloudflare中<code>联网-Tunnels</code> 创建隧道，创建路由填写域名，URL填写端口<code>http://localhost:port</code></p><p>sing-box: 2-&gt;1，输入URL填写端口，默认WebSocket路径，2固定隧道，使用tunnel概览界面的token，输入路由的域名，填写名称</p>]]></content>
     
     
     <summary type="html">记录VPS节点搭建</summary>
@@ -44,9 +44,9 @@
     <link href="https://buaa-makima.github.io/posts/24af6955.html"/>
     <id>https://buaa-makima.github.io/posts/24af6955.html</id>
     <published>2026-11-03T14:54:56.000Z</published>
-    <updated>2026-11-03T16:49:48.082Z</updated>
+    <updated>2026-11-05T15:07:20.129Z</updated>
     
-    <content type="html"><![CDATA[<p>域名 -&gt; Cloudflare -&gt; cloudflared (服务器上的服务) -&gt; nginx (80) -&gt; komari (25774)</p><h3 id="tunnel">tunnel</h3><p><code>联网-Tunnels</code> 创建隧道，创建路由填写域名，URL填写<code>http://localhost:80</code></p><h3 id="安装komari">安装komari</h3><p><a href="https://github.com/tao-t356/TaoBox">工具箱 </a></p><p>下载之后，f进入界面,选 <code>系统工具/DD</code>，选 <code>komari 服务器监控</code>，选1 <code>安装</code>，输入创建的路由域名</p><p>komari 监听 <code>127.0.0.1:25774</code></p><p>nginx 监听 <code>0.0.0.0:80</code></p><p>相关服务命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status komari</span><br></pre></td></tr></table></figure><h3 id="配置clouadflared">配置clouadflared</h3><p>使用创建的隧道概览界面对应的命令1和2(linux 下)注册服务即可完成面板启动</p><p>相关服务命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status cloudflared</span><br></pre></td></tr></table></figure><h3 id="服务器节点添加">服务器节点添加</h3><p>通过一键部署命令添加即可，注意禁用远程控制</p><h3 id="延迟检测">延迟检测</h3><p>使用https://www.zstaticcdn.com/查看对应地区运营商DNS，设置时选择tcp类型，填上对应的目标，例如<code>hb-ct-v4.ip.zstaticcdn.com:80</code></p><h3 id="tg通知">tg通知</h3><p>首先安装tg通知插件并启用，接着在通知渠道中设置以下信息</p><p>tg中找<code>@BotFather</code>创建机器人，得到机器人的token</p><p>找<code>@userinfobot</code>查看自己的ID</p><h3 id="迁移">迁移</h3><p>在<code>站点设置中</code>可以将备份数据直接下载到本地</p><p>在另一个服务器中重新配置安装即可，在原有服务器暂停相关服务(couldflare暂停了就不会冲突了)</p><p>网页上进入面板时上传备份数据进行恢复，如果由于cf等原因导致上传卡住或失败的话，使用<code>ssh -L 25774:127.0.0.1:25744 user@ip</code> ，然后通过本地网页上传</p>]]></content>
+    <content type="html"><![CDATA[<p>域名 -&gt; Cloudflare -&gt; cloudflared (服务器上的服务) -&gt; nginx (80) -&gt; komari (25774)</p><h3 id="tunnel">tunnel</h3><p><code>联网-Tunnels</code> 创建隧道，创建路由填写域名，URL填写<code>http://localhost:80</code></p><h3 id="安装komari">安装komari</h3><p><a href="https://github.com/tao-t356/TaoBox">工具箱 </a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">(</span><br><span class="line">  <span class="built_in">set</span> -euo pipefail</span><br><span class="line">  jshook=<span class="string">&quot;<span class="variable">$&#123;JSHOOK:-123&#125;</span>&quot;</span></span><br><span class="line">  url=<span class="string">&quot;https://raw.githubusercontent.com/tao-t356/TaoBox/main/bootstrap-vps.sh&quot;</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> <span class="built_in">command</span> -v curl &gt;/dev/null 2&gt;&amp;1; <span class="keyword">then</span></span><br><span class="line">    curl -fsSL -H <span class="string">&quot;jshook: <span class="variable">$&#123;jshook&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;url&#125;</span>&quot;</span> | bash</span><br><span class="line">  <span class="keyword">elif</span> <span class="built_in">command</span> -v wget &gt;/dev/null 2&gt;&amp;1; <span class="keyword">then</span></span><br><span class="line">    wget -qO- --header=<span class="string">&quot;jshook: <span class="variable">$&#123;jshook&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;url&#125;</span>&quot;</span> | bash</span><br><span class="line">  <span class="keyword">elif</span> <span class="built_in">command</span> -v apt-get &gt;/dev/null 2&gt;&amp;1 &amp;&amp; [ <span class="string">&quot;<span class="subst">$(id -u)</span>&quot;</span> -eq 0 ]; <span class="keyword">then</span></span><br><span class="line">    apt-get update</span><br><span class="line">    apt-get install -y curl</span><br><span class="line">    curl -fsSL -H <span class="string">&quot;jshook: <span class="variable">$&#123;jshook&#125;</span>&quot;</span> <span class="string">&quot;<span class="variable">$&#123;url&#125;</span>&quot;</span> | bash</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;未找到 curl 或 wget；请先安装其中一个，或手动传入 bootstrap-vps.sh。&quot;</span> &gt;&amp;2</span><br><span class="line">    <span class="built_in">exit</span> 1</span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure><p>下载之后，f进入界面,选 <code>系统工具/DD</code>，选 <code>komari 服务器监控</code>，选1 <code>安装</code>，输入创建的路由域名</p><p>komari 监听 <code>127.0.0.1:25774</code></p><p>nginx 监听 <code>0.0.0.0:80</code></p><p>相关服务命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status komari</span><br></pre></td></tr></table></figure><h3 id="配置clouadflared">配置clouadflared</h3><p>使用创建的隧道概览界面对应的命令1和2(linux 下)注册服务即可完成面板启动</p><p>相关服务命令</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status cloudflared</span><br></pre></td></tr></table></figure><h3 id="服务器节点添加">服务器节点添加</h3><p>通过一键部署命令添加即可，注意禁用远程控制</p><h3 id="延迟检测">延迟检测</h3><p>使用https://www.zstaticcdn.com/查看对应地区运营商DNS，设置时选择tcp类型，填上对应的目标，例如<code>hb-ct-v4.ip.zstaticcdn.com:80</code></p><h3 id="tg通知">tg通知</h3><p>首先安装tg通知插件并启用，接着在通知渠道中设置以下信息</p><p>tg中找<code>@BotFather</code>创建机器人，得到机器人的token</p><p>找<code>@userinfobot</code>查看自己的ID</p><h3 id="迁移">迁移</h3><p>在<code>站点设置中</code>可以将备份数据直接下载到本地</p><p>在另一个服务器中重新配置安装即可，在原有服务器暂停相关服务(couldflare暂停了就不会冲突了)</p><p>网页上进入面板时上传备份数据进行恢复，如果由于cf等原因导致上传卡住或失败的话，使用<code>ssh -L 25774:127.0.0.1:25744 user@ip</code> ，然后通过本地网页上传</p>]]></content>
     
     
     <summary type="html">记录komari探针部署</summary>
@@ -246,9 +246,9 @@
     
     <category term="BUAA" scheme="https://buaa-makima.github.io/tags/BUAA/"/>
     
-    <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
-    
     <category term="电梯调度" scheme="https://buaa-makima.github.io/tags/%E7%94%B5%E6%A2%AF%E8%B0%83%E5%BA%A6/"/>
+    
+    <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
     
   </entry>
   
@@ -317,9 +317,9 @@
     
     <category term="BUAA" scheme="https://buaa-makima.github.io/tags/BUAA/"/>
     
-    <category term="表达式化简" scheme="https://buaa-makima.github.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%96%E7%AE%80/"/>
-    
     <category term="JAVA" scheme="https://buaa-makima.github.io/tags/JAVA/"/>
+    
+    <category term="表达式化简" scheme="https://buaa-makima.github.io/tags/%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%8C%96%E7%AE%80/"/>
     
   </entry>
   
