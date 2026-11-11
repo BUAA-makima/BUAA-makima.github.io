@@ -44,9 +44,9 @@
     <link href="https://blog.makima.cc.cd/posts/291a5b1a.html"/>
     <id>https://blog.makima.cc.cd/posts/291a5b1a.html</id>
     <published>2026-11-11T15:16:10.000Z</published>
-    <updated>2026-11-11T17:22:19.547Z</updated>
+    <updated>2026-11-11T17:23:06.603Z</updated>
     
-    <content type="html"><![CDATA[<p>给对应域名添加<code>CNAME</code>记录（别名），设置名称（例如blog），并将目标指向使用的github pages域名，通常为<code>username.github.io</code></p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114431.png" alt="image-20261111234431712"></p><p>在github对应的仓库中，<code>settings-pages</code>下custom domain中填入刚才设置的完整域名（例如blog.xx.xx）</p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114350.png" alt="image-20261111234350640"></p><p>如果想使用github pages的<code>Enforce HTTPS</code>并且是cloudflare托管域名，需要先把代理状态关闭才能勾选，勾选完成后再打开代理即可</p><p>注意要在Hexo项目的source目录下创建<code>CNAME</code>文件，在里面填写自定义的域名，不然每次部署都会导致github配置丢失。<a href="https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain">来源</a></p>]]></content>
+    <content type="html"><![CDATA[<p>给对应域名添加<code>CNAME</code>记录（别名），设置名称（例如blog），并将目标指向使用的github pages域名，通常为<code>username.github.io</code></p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114431.png" alt="image-20261111234431712"></p><p>在github对应的仓库中，<code>settings-pages</code>下custom domain中填入刚才设置的完整域名（例如blog.xx.xx）</p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114350.png" alt="image-20261111234350640"></p><p>如果想使用github pages的<code>Enforce HTTPS</code>并且是cloudflare托管域名，需要先把代理状态关闭才能勾选，勾选完成后再打开代理即可</p><p>注意要在Hexo项目的source目录下创建<code>CNAME</code>文件，在里面填写自定义的域名，不然每次部署都会导致github配置丢失。<a href="https://hexo.io/zh-cn/docs/github-pages.html">来源</a></p>]]></content>
     
     
     <summary type="html">记录hexo自定义域名访问</summary>
