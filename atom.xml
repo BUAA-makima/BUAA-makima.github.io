@@ -6,7 +6,7 @@
   <link href="https://blog.makima.cc.cd/atom.xml" rel="self"/>
   
   <link href="https://blog.makima.cc.cd/"/>
-  <updated>2026-11-11T16:46:52.993Z</updated>
+  <updated>2026-11-11T18:17:03.383Z</updated>
   <id>https://blog.makima.cc.cd/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo使用Algolia搜索</title>
+    <link href="https://blog.makima.cc.cd/posts/88b2d4ac.html"/>
+    <id>https://blog.makima.cc.cd/posts/88b2d4ac.html</id>
+    <published>2026-11-11T17:43:22.000Z</published>
+    <updated>2026-11-11T18:17:03.383Z</updated>
+    
+    <content type="html"><![CDATA[<p>要让博客的搜索功能起效果，还需要配置Algolia，先去https://dashboard.algolia.com 注册账号，然后在<code>Data sources-Indices</code>下创建index并命名</p><p>在<code>Settings-API Keys</code>下找到Application ID、Search API Key和Admin API Key，和index名称一起填入_config.yml中，分别对应appId、apiKey、adminApiKey和indexName</p><p>使用<code>hexo algolia</code>创建索引，在此之前需要使用<code>hexo g</code>生成文件，如果出错可以尝试调小<code>content:strip:truncate,0,4000</code></p>]]></content>
+    
+    
+    <summary type="html">记录Algolia配置</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://blog.makima.cc.cd/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://blog.makima.cc.cd/tags/Hexo/"/>
+    
+    <category term="Algolia" scheme="https://blog.makima.cc.cd/tags/Algolia/"/>
+    
+  </entry>
   
   <entry>
     <title>cloudflare代理github图床</title>
@@ -44,9 +67,9 @@
     <link href="https://blog.makima.cc.cd/posts/291a5b1a.html"/>
     <id>https://blog.makima.cc.cd/posts/291a5b1a.html</id>
     <published>2026-11-11T15:16:10.000Z</published>
-    <updated>2026-11-11T17:23:06.603Z</updated>
+    <updated>2026-11-11T17:45:08.585Z</updated>
     
-    <content type="html"><![CDATA[<p>给对应域名添加<code>CNAME</code>记录（别名），设置名称（例如blog），并将目标指向使用的github pages域名，通常为<code>username.github.io</code></p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114431.png" alt="image-20261111234431712"></p><p>在github对应的仓库中，<code>settings-pages</code>下custom domain中填入刚才设置的完整域名（例如blog.xx.xx）</p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114350.png" alt="image-20261111234350640"></p><p>如果想使用github pages的<code>Enforce HTTPS</code>并且是cloudflare托管域名，需要先把代理状态关闭才能勾选，勾选完成后再打开代理即可</p><p>注意要在Hexo项目的source目录下创建<code>CNAME</code>文件，在里面填写自定义的域名，不然每次部署都会导致github配置丢失。<a href="https://hexo.io/zh-cn/docs/github-pages.html">来源</a></p>]]></content>
+    <content type="html"><![CDATA[<p>给对应域名添加<code>CNAME</code>记录（别名），设置名称（例如blog），并将目标指向使用的github pages域名，通常为<code>username.github.io</code></p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114431.png" alt="image-20261111234431712"></p><p>在github对应的仓库中，<code>settings-pages</code>下custom domain中填入刚才设置的完整域名（例如blog.xx.xx）</p><p><img src="https://img.makima.cc.cd/img/2026/11/11/202611114350.png" alt="image-20261111234350640"></p><p>如果想使用github pages的<code>Enforce HTTPS</code>并且是cloudflare托管域名，需要先把代理状态关闭才能勾选，勾选完成后再打开代理即可</p><p>接着_config.yml文件中的url也改成对应的地址</p><p>注意要在Hexo项目的source目录下创建<code>CNAME</code>文件，在里面填写自定义的域名，不然每次部署都会导致github配置丢失。<a href="https://hexo.io/zh-cn/docs/github-pages.html">来源</a></p>]]></content>
     
     
     <summary type="html">记录hexo自定义域名访问</summary>
