@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>BBR(TCP拥塞算法)</title>
+      <link href="/posts/b51639b.html"/>
+      <url>/posts/b51639b.html</url>
+      
+        <content type="html"><![CDATA[<p>linux从4.9的内核开始引入，让TCP尽可能充分利用网络带宽，同时减少不必要的排队延迟</p><p>查看可用算法是否有bbr</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control <span class="comment"># 查看可用算法</span></span><br><span class="line">sysctl net.ipv4.tcp_congestion_control <span class="comment"># 查看当前算法</span></span><br></pre></td></tr></table></figure><p>如果没有bbr可以尝试加载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe tcp_bbr</span><br></pre></td></tr></table></figure><p>开启bbr（结合fair queue，一种网络队列调度算法）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;net.core.default_qdisc=fq&quot;</span> &gt;&gt; /etc/sysctl.conf</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;net.ipv4.tcp_congestion_control=bbr&quot;</span> &gt;&gt; /etc/sysctl.conf</span><br><span class="line">sysctl -p</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.core.default_qdisc <span class="comment"># 默认队列算法</span></span><br><span class="line">tc qdisc show <span class="comment"># 当前网卡使用的算法</span></span><br><span class="line">tc qdisc replace dev eth0 root fq <span class="comment"># 修改当前网卡eth0算法，重启后失效</span></span><br></pre></td></tr></table></figure><p>默认的应该是bbrv1，其他的魔改版本或者bbrv2/bbrv3有待探究</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 服务器 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> BBR </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>VPS节点搭建</title>
       <link href="/posts/6ce273f.html"/>
       <url>/posts/6ce273f.html</url>
       
-        <content type="html"><![CDATA[<h3 id="免费域名注册">免费域名注册</h3><p><a href="https://my.dnshe.com/">https://my.dnshe.com/</a> 可以注册三个免费的域名，365天，可续</p><h3 id="Cloudflare托管域名">Cloudflare托管域名</h3><p>添加域名-&gt;连接域名-&gt;输入域名后继续-&gt;选择免费计划-&gt;继续激活</p><p>将cloudflare的名称服务器替换到域名网站的DNS服务器(管理域名-DNS服务器)中</p><h3 id="VPS节点创建">VPS节点创建</h3><p><a href="https://github.com/0xdabiaoge/singbox-lite">脚本</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(curl -LfsS https://raw.githubusercontent.com/0xdabiaoge/singbox-lite/main/singbox.sh -o /usr/local/bin/sb || wget -q https://raw.githubusercontent.com/0xdabiaoge/singbox-lite/main/singbox.sh -O /usr/local/bin/sb) &amp;&amp; <span class="built_in">chmod</span> +x /usr/local/bin/sb &amp;&amp; sb</span><br></pre></td></tr></table></figure><p>下载之后，sb进入界面，安装核心，生成的节点clash可用文件在<code>/usr/local/etc/sing-box/clash.yaml</code></p><h4 id="直连-VLESS-TCP-Reality-Vision">直连 (VLESS + TCP + Reality + Vision)</h4><p>1-&gt;1</p><p>配置服务器IP（ipv4和ipv6均可）、伪装域名、端口和名称</p><p>最后注意服务器转发对应端口</p><h4 id="argo固定隧道-VLESS-WS">argo固定隧道 (VLESS-WS)</h4><p>直连可能面临tcp被封禁导致无法连接，使用argo隧道节点采用以下方式连接</p><p>域名-&gt;Cloudflare-&gt;Cloudfalred（服务器）-&gt;代理端口</p><p>Cloudflare中<code>联网-Tunnels</code> 创建隧道，创建路由填写域名，URL填写端口<code>http://localhost:port</code></p><p>sing-box: 2-&gt;1，输入URL填写端口，默认WebSocket路径，2固定隧道，使用tunnel概览界面的token，输入路由的域名，填写名称</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="免费域名注册">免费域名注册</h3><p><a href="https://my.dnshe.com/">https://my.dnshe.com/</a> 可以注册三个免费的域名，365天，可续</p><h3 id="Cloudflare托管域名">Cloudflare托管域名</h3><p>添加域名-&gt;连接域名-&gt;输入域名后继续-&gt;选择免费计划-&gt;继续激活</p><p>将cloudflare的名称服务器替换到域名网站的DNS服务器(管理域名-DNS服务器)中</p><h3 id="VPS节点创建">VPS节点创建</h3><p><a href="https://github.com/0xdabiaoge/singbox-lite">脚本</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">(curl -LfsS https://raw.githubusercontent.com/0xdabiaoge/singbox-lite/main/singbox.sh -o /usr/local/bin/sb || wget -q https://raw.githubusercontent.com/0xdabiaoge/singbox-lite/main/singbox.sh -O /usr/local/bin/sb) &amp;&amp; <span class="built_in">chmod</span> +x /usr/local/bin/sb &amp;&amp; sb</span><br></pre></td></tr></table></figure><p>下载之后，sb进入界面，安装核心，生成的节点clash可用文件在<code>/usr/local/etc/sing-box/clash.yaml</code></p><h4 id="直连-VLESS-TCP-Reality-Vision">直连 (VLESS + TCP + Reality + Vision)</h4><p>1-&gt;1</p><p>配置服务器IP（ipv4和ipv6均可）、伪装域名（选择到VPS延迟低的）、端口和名称</p><p>最后注意服务器转发对应端口</p><h4 id="argo固定隧道-VLESS-WS">argo固定隧道 (VLESS-WS)</h4><p>直连可能面临tcp被封禁导致无法连接，使用argo隧道节点采用以下方式连接</p><p>域名-&gt;Cloudflare-&gt;Cloudfalred（服务器）-&gt;代理端口</p><p>Cloudflare中<code>联网-Tunnels</code> 创建隧道，创建路由填写域名，URL填写端口<code>http://localhost:port</code></p><p>sing-box: 2-&gt;1，输入URL填写端口，默认WebSocket路径，2固定隧道，使用tunnel概览界面的token，输入路由的域名，填写名称</p>]]></content>
       
       
       <categories>
@@ -23,6 +48,8 @@
             <tag> VPS </tag>
             
             <tag> Cloudflare </tag>
+            
+            <tag> BBR </tag>
             
         </tags>
       
@@ -184,11 +211,11 @@
       
         <tags>
             
-            <tag> 阅读笔记 </tag>
-            
             <tag> BUAA </tag>
             
             <tag> JAVA </tag>
+            
+            <tag> 阅读笔记 </tag>
             
             <tag> JML </tag>
             
