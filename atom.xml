@@ -6,7 +6,7 @@
   <link href="https://buaa-makima.github.io/atom.xml" rel="self"/>
   
   <link href="https://buaa-makima.github.io/"/>
-  <updated>2026-11-11T07:50:17.240Z</updated>
+  <updated>2026-11-11T07:51:27.345Z</updated>
   <id>https://buaa-makima.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://buaa-makima.github.io/posts/b51639b.html"/>
     <id>https://buaa-makima.github.io/posts/b51639b.html</id>
     <published>2026-11-11T07:48:03.000Z</published>
-    <updated>2026-11-11T07:50:17.240Z</updated>
+    <updated>2026-11-11T07:51:27.345Z</updated>
     
     <content type="html"><![CDATA[<p>linux从4.9的内核开始引入，让TCP尽可能充分利用网络带宽，同时减少不必要的排队延迟</p><p>查看可用算法是否有bbr</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control <span class="comment"># 查看可用算法</span></span><br><span class="line">sysctl net.ipv4.tcp_congestion_control <span class="comment"># 查看当前算法</span></span><br></pre></td></tr></table></figure><p>如果没有bbr可以尝试加载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe tcp_bbr</span><br></pre></td></tr></table></figure><p>开启bbr（结合fair queue，一种网络队列调度算法）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;net.core.default_qdisc=fq&quot;</span> &gt;&gt; /etc/sysctl.conf</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;net.ipv4.tcp_congestion_control=bbr&quot;</span> &gt;&gt; /etc/sysctl.conf</span><br><span class="line">sysctl -p</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.core.default_qdisc <span class="comment"># 默认队列算法</span></span><br><span class="line">tc qdisc show <span class="comment"># 当前网卡使用的算法</span></span><br><span class="line">tc qdisc replace dev eth0 root fq <span class="comment"># 修改当前网卡eth0算法，重启后失效</span></span><br></pre></td></tr></table></figure><p>默认的应该是bbrv1，其他的魔改版本或者bbrv2/bbrv3有待探究</p>]]></content>
     
