@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>hexo自定义域名</title>
+      <link href="/posts/291a5b1a.html"/>
+      <url>/posts/291a5b1a.html</url>
+      
+        <content type="html"><![CDATA[<p>给对应域名添加<code>CNAME</code>记录（别名），设置名称（例如blog），并将目标指向使用的github pages域名，通常为<code>username.github.io</code></p><p><img src="https://raw.githubusercontent.com/BUAA-makima/pic_bed/master/img/2026/11/11/202611114431.png" alt="image-20261111234431712"></p><p>在github对应的仓库中，<code>settings-pages</code>下custom domain中填入刚才设置的完整域名（例如blog.xx.xx）</p><p><img src="https://raw.githubusercontent.com/BUAA-makima/pic_bed/master/img/2026/11/11/202611114350.png" alt="image-20261111234350640"></p><p>如果想使用github pages的<code>Enforce HTTPS</code>并且是cloudflare托管域名，需要先把代理状态关闭才能勾选，勾选完成后再打开代理即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>BBR(TCP拥塞算法)</title>
       <link href="/posts/b51639b.html"/>
       <url>/posts/b51639b.html</url>
